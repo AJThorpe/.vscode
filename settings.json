@@ -15,11 +15,13 @@
     "python.linting.flake8Enabled": true,
     "python.linting.flake8Args": [
         "--max-line-length=88",
-        "--ignore=E203",
+        "count=True",
+        "--ignore=E203,W503,E712",
         "--docstring-convention=numpy",
         "--rst-roles=class,func,ref",
         "--rst-directives=envvar,exception",
         "--rst-substitutions=version",
+        "statistics=True",
     ],
 
     "python.linting.banditEnabled": true,
